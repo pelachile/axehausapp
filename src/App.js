@@ -4,8 +4,12 @@ import logo from "./logo.png";
 function App() {
   return (
     <header className="relative w-full h-screen header">
-      <div className="absolute w-1/12 logo-box top-10 left-10">
-        <img src={logo} alt="Corpus Christi Axe Haus Logo" className="logo" />
+      <div className="absolute w-1/2 logo-box top-10 left-1/4 md:left-10 md:top-5 md:w-28">
+        <img
+          src={logo}
+          alt="Corpus Christi Axe Haus Logo"
+          className="w-full logo"
+        />
       </div>
       <div className="absolute w-full text-center header-box top-1/2 left-1/2">
         <h1 className="text-center text-white uppercase heading-main">
@@ -18,7 +22,7 @@ function App() {
         </h1>
         <a
           href="/"
-          className="inline-block transform hover:scale-110 motion-reduce:transform-none py-4 px-4 bg-gray-50 text-gray-500 rounded-2xl mt-6"
+          className="inline-block transform hover:scale-110 motion-reduce:transform-none py-4 px-4 bg-gray-50 text-gray-500 rounded-2xl mt-6 hover:shadow-xl hover:bg-gray-100"
         >
           Book Your Experience
         </a>
