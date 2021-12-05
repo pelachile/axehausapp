@@ -1,0 +1,60 @@
+/*
+ Colors:
+ Light gray: #E0E0E0
+ Medium gray: #9E9E9E
+ Dark gray: #424242
+ */
+.header {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(224, 224, 224, 0.4),
+      rgba(33, 33, 33, 1)
+    ),
+    url("AxeHausHome2.jpg");
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.header-box {
+  transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+  animation: moveInLeft;
+  animation-duration: 1s;
+  backface-visibility: hidden;
+}
+
+.tagline {
+  animation: moveInRight;
+  animation-duration: 1s;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
